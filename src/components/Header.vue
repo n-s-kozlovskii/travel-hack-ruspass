@@ -1,6 +1,6 @@
 <template>
-  <div class="top">
-    <h3>{{ text }}</h3>
+  <div class="header  top">
+    <h1>{{ text }}</h1>
     </div>
 </template>
 
@@ -13,13 +13,13 @@ export default {
 </script>
 
 <style scoped>
-.top {
+  a {
+    color: #42b983;
+  }
+  .top {
     margin: 5px;
 }
-h3 {
+  h3 {
   margin: 20px 0 0;
-}
-a {
-  color: #42b983;
 }
 </style>

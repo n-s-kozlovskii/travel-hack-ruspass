@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Pricing example for Bootstrap</title>
+
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css"/>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--    &lt;!&ndash; Bootstrap core CSS &ndash;&gt;-->
+    <!--    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+    <!--  jQuery -->
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+</head>
+
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Moscow Travels</h5>
+
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">О нас</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#">Авторизация</a>
+    </div>
+</header>
+
+<body>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="container">
+            <div class="text-center">
+                <h3>Карточка туриста</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="sex">Пол</label>
+                    <select class="custom-select d-block w-100" id="sex" required>
+                        <option>Мужчина</option>
+                        <option>Женщина</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="age">Возраст</label>
+                    <select class="custom-select d-block w-100" id="age" required>
+                        <option value="">меньше 18</option>
+                        <option>18-25</option>
+                        <option>26-40</option>
+                        <option>40-55</option>
+                        <option>старше 55</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="group">Состав группы</label>
+                    <select class="custom-select d-block w-100" id="group" required>
+                        <option value="">Один</option>
+                        <option>1 - 3 человека</option>
+                        <option>4 - 8 человек</option>
+                        <option>9 - 15 человек</option>
+                    </select>
+                </div>
+
+                <div class="col-md-12">
+                    <label for="date_interval">Время пребывания</label>
+                    <div class="input-group input-daterange" id="date_interval">
+                        <input type="text" class="form-control" value="2020-04-05">
+                        <div class="input-group-addon"> по</div>
+                        <input type="text" class="form-control" value="2020-04-19">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <label for="interests">Интересы</label>
+            <div class="row" id="interests">
+                <div class="col-md-4 mb-3">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="top">
+                        <label class="custom-control-label" for="top">только ТОП</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="flex">
+                        <label class="custom-control-label" for="flex">Потусить</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="shops">
+                        <label class="custom-control-label" for="shops">Покупки</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="art">
+                        <label class="custom-control-label" for="art">Искусство</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="science">
+                        <label class="custom-control-label" for="science">Наука</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="nature">
+                        <label class="custom-control-label" for="nature">Природа</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="children">
+                        <label class="custom-control-label" for="children">Отдых с детьми</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="history">
+                        <label class="custom-control-label" for="history">История</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mb-3">
+                <label for="address">Начальная точка</label>
+                <input type="text" class="form-control" id="address" placeholder="Введите начальный адрес" required>
+                <div class="invalid-feedback">
+                    Please enter your shipping address.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-8">
+        <!-- TODO тут должна быть карта -->
+    </div>
+
+</div>
+
+</body>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020 zid&weed</p>
+</footer>
+
+</html>
+<script>
+
+</script>

@@ -1,7 +1,7 @@
 <template>
     <div>
+        <span>Пол : </span>
         <select v-model="selected">
-            <span>Сезон : </span>
             <option v-for="item in genderType" v-bind:value="item.id">
                 {{ item.title }}
             </option>

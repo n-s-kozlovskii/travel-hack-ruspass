@@ -1,7 +1,7 @@
 <template>
     <div>
+        <span>Сезон : </span>
         <select v-model="selected">
-            <span>Сезон : </span>
             <option v-for="item in seasons" v-bind:value="item.id">
                 {{ item.title }}
             </option>
@@ -24,3 +24,5 @@
         }
     }
 </script>
+
+<style></style>
