@@ -7,16 +7,15 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Pricing example for Bootstrap</title>
-
     <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css"/>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
+<!--    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Bootstrap Date-Picker Plugin -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 
-
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -27,13 +26,14 @@
     <!--    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
 
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+<!--    <link href="pricing.css" rel="stylesheet">-->
     <!--  jQuery -->
 
     <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
 
     <!-- Bootstrap Date-Picker Plugin -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <header>
@@ -62,6 +62,7 @@
                     <select class="custom-select d-block w-100" id="sex" required>
                         <option>Мужчина</option>
                         <option>Женщина</option>
+                        <option>Mixed</option>
                     </select>
                 </div>
 
@@ -148,15 +149,33 @@
                 <label for="address">Начальная точка</label>
                 <input type="text" class="form-control" id="address" placeholder="Введите начальный адрес" required>
                 <div class="invalid-feedback">
-                    Please enter your shipping address.
+                    Пожалуйста, введи адрес.
                 </div>
             </div>
         </div>
+
+        <div>
+
+        </div>
+
+        <div class="container">
+            <div class="text-center">
+                <h3>Достопримечательности</h3>
+            </div>
+
+            <div style="overflow-y: scroll; height:250px; width: auto;">
+                <div class="row col-md-8 center">
+                    <label for="description1">Имя объекта/достопримечательности</label>
+                    <p id="description1"> какое то описание объекта достопримечательности</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
     <div class="col-md-8">
-        <!-- TODO тут должна быть карта -->
+        <div id="mapBox"></div>
     </div>
 
 </div>
